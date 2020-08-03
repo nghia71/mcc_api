@@ -10,7 +10,7 @@ This is an Python module which facilitates the communications between the Python
 
         pip install requests
 
-5. Download the `mcc_api` package, which is this repository, by click on the green `↓ Code` button on this page, or by clicking this: [download it] (https://github.com/nghia71/mcc_api/archive/master.zip). Unzip it into a folder. This folder will be where you're going to place your Python scripts.
+5. Download the `mcc_api` package, which is this repository, by click on the green `↓ Code` button on this page, or by clicking this: [download it](https://github.com/nghia71/mcc_api/archive/master.zip). Unzip it into a folder. This folder will be where you're going to place your Python scripts.
 
 ## Connect to Astria and check if Pegasus is ready
 1. Download your personal access from your assigned folder on the club's Google drive. It should be inside the `Astria` directory (folder) with your name as part of the file name. For example:
