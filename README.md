@@ -9,18 +9,22 @@ This is an Python module which facilitates the communications between the Python
 4. Install the Python ```requests``` module by typing out while in your virtual environment (venv):
 
         pip install requests
+
 5. Download the `mcc_api` package, which is this repository, by click on the green `↓ Code` button on this page, or by clicking this: [download it] (https://github.com/nghia71/mcc_api/archive/master.zip). Unzip it into a folder. This folder will be where you're going to place your Python scripts.
 
 ## Connect to Astria and check if Pegasus is ready
 1. Download your personal access from your assigned folder on the club's Google drive. It should be inside the `Astria` directory (folder) with your name as part of the file name. For example:
 
         anthony_ly.conf
+
 2. Download your file into the local folder you have unzipped the `mcc_api` into. Rename this new file into `mcc.conf` and delete the old file. You can do this manually by clicking and dragging the old file into the trash, but if you want to do it via code, type th following in:
 In Windows's Command Prompt:
 
         ren anthony_ly.conf mcc.conf
 In Mac OS X's or (Ubuntu) Linux's Terminal:
+
         mv anthony_ly.conf mcc.conf
+
 
 3. Test Pegasus if it is ready
 First, open a tab on your favourite browser by clicking on this link to [Astria](http://206.47.13.10:8080).
@@ -29,7 +33,9 @@ You should see the screen similar to below:
 ![Alt text](img/astria_noone.png "Astria")
 
 Second, in the Command Prompt or Terminal, run:
-        python3 check_pegasus
+
+    python check_pegasus.py
+
 You should see the word `OK` on the next line if you have configured Pegasus correctly:
 ![Alt text](img/check_pegasus.png "Pegasus")
 
@@ -165,11 +171,11 @@ Similar to the first problem, now you have to create an  implementation for `my_
     ########################################
     # Task for the fake_coin problem: uncomment and make them work
     #
-    # coins = ['0', '1', '1', '1', '1', '1', '1', '1']
-    # shuffle(coins)
-    # my_coins = ''.join(coins)
-    # result = p.submit('fake_coin', my_coins, my_fake_coin(my_coins))
-    # print(result)
+    coins = ['0', '1', '1', '1', '1', '1', '1', '1']
+    shuffle(coins)
+    my_coins = ''.join(coins)
+    result = p.submit('fake_coin', my_coins, my_fake_coin(my_coins))
+    print(result)
 
 ### Problem Three: Find the sequence of moves
 #### The problem: *A knight stand on a square in the 3x3 chessboard. The squares on the board are number 1 to 9 from the top to the bottom row and from left to right. The number of the square where the knight stands is the position of the knight. Given the position, find the sequence of numbers that representing the squares the knight visit, each once, before return to the original squares.*
@@ -196,9 +202,9 @@ with an fake implementation
     ########################################
     # Task for the move_sequence problem: uncomment and make them work
     #
-    # my_position = choice(['1', '2', '3', '4', '6', '7', '8', '9']
-    # result = p.submit('move_sequence', my_position, my_move_sequence(my_position))
-    # print(result)
+    my_position = choice(['1', '2', '3', '4', '6', '7', '8', '9']
+    result = p.submit('move_sequence', my_position, my_move_sequence(my_position))
+    print(result)
 
 ## Recording of results and submissions
 `Astria` records all your submissions. Every single one. She also keeps the final submission of each problem, so don't be worried if you lost the right answer in your testing. This also means she can see your guesses and brute force answers, so solve wisely.
