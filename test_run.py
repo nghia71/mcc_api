@@ -36,7 +36,7 @@ def my_fake_coin(coins):
 
 
 #
-# This is a fake implementation, it always return '4'. The test run will fail.
+# This is a fake implementation, it always return '12345678'. The test run will fail.
 #
 def my_move_sequence(position):
     return '12345678'
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     # coins = ['0', '1', '1', '1', '1', '1', '1', '1']
     # shuffle(coins)
     # my_coins = ''.join(coins)
-    # result = p.submit('move_sequence', my_position, my_move_sequence(my_position))
+    # result = p.submit('fake_coin', my_coins, my_fake_coin(my_coins))
     # print(result)
 
     ########################################
