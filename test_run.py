@@ -36,7 +36,7 @@ def my_fake_coin(coins):
 
 
 #
-# This is a fake implementation, it always return '4'. The test run will fail.
+# This is a fake implementation, it always return '12345678'. The test run will fail.
 #
 def my_move_sequence(position):
     return '12345678'
