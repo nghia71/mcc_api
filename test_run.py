@@ -62,14 +62,14 @@ if __name__ == '__main__':
     ########################################
     # Sample test for the fake_coin problem
     #
-    my_coins = '1111111'
+    my_coins = '11101111'
     result = p.submit('fake_coin', my_coins, my_fake_coin(my_coins))
     print(result)
 
     ########################################
     # Sample test for the move_sequence problem
     #
-    my_position ='7'
+    my_position = '7'
     result = p.submit('move_sequence', my_position, my_move_sequence(my_position))
     print(result)
 
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     # coins = ['0', '1', '1', '1', '1', '1', '1', '1']
     # shuffle(coins)
     # my_coins = ''.join(coins)
-    # result = p.submit('move_sequence', my_position, my_move_sequence(my_position))
+    # result = p.submit('fake_coin', my_coins, my_fake_coin(my_coins))
     # print(result)
 
     ########################################
