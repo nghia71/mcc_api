@@ -164,6 +164,8 @@ An incomplete implementation of `my_fake_coin` function is given:
 
 In this implementation, the first coin and the second coin are obtained by getting the first and second characters from the string, converting them to integers and comparing them. If the first coin is 0 and the second is 1, then it will return 0 as the position of the fake coin. This is the first coin, in this case, meaning the coin at index 1 is fake. Of course this implementation is incomplete and will not work in most of the cases.
 
+*Note: The problem asks to simulate how a BALANCE SCALE works. Searching the position of the 0 digit is not the purpose of the problem. Your submission might be successful, but your code will not be accepted.*
+
 ##### The task: *Your implementation of my_fake_coin has to find the fake coin with a given random string representing the order of the coins*
 
 Similar to the first problem, now you have to create an  implementation for `my_fake_coin` and make sure that it works with the task. Uncomment and use the following code when you think you have the right answer.
@@ -192,17 +194,22 @@ Again, a sample position is given
 with an fake implementation
 
     #
-    # This is a fake implementation, it always return '12345678'. The test run will fail.
+    # This is a fake implementation, it returns '16789234' or '18789234'.
+    # The test run will fail.
     #
     def my_move_sequence(position):
-        return '12345678'
+        if my_position = '1':
+            next_position = choice(['6', '8'])
+        return next_position + '789234' + my_position
+
+*Note: The problem asks to simulate move sequences, not to show done sequences. For example to simulate a move of a knight from square 1, you have two choices: square 6, or square 8. The way your code is written is to make the knight move on a preset sequence. You have to write a code that PLAYS the moves based on the chess rules.*
 
 ##### The task: *Your implementation of my_move_sequence has to determine the sequence of move as a string of digits*
 
     ########################################
     # Task for the move_sequence problem: uncomment and make them work
     #
-    my_position = choice(['1', '2', '3', '4', '6', '7', '8', '9']
+    my_position = choice(['1', '2', '3', '4', '6', '7', '8', '9'])
     result = p.submit('move_sequence', my_position, my_move_sequence(my_position))
     print(result)
 

@@ -36,10 +36,13 @@ def my_fake_coin(coins):
 
 
 #
-# This is a fake implementation, it always return '12345678'. The test run will fail.
+# This is a fake implementation, it returns '16789234' or '18789234'.
+# The test run will fail.
 #
 def my_move_sequence(position):
-    return '12345678'
+    if my_position = '1':
+        next_position = choice(['6', '8'])
+    return next_position + '789234' + my_position
 
 
 if __name__ == '__main__':
@@ -91,6 +94,6 @@ if __name__ == '__main__':
     ########################################
     # Task for the move_sequence problem: uncomment and make them work
     #
-    # my_position = choice(['1', '2', '3', '4', '6', '7', '8', '9']
+    # my_position = choice(['1', '2', '3', '4', '6', '7', '8', '9'])
     # result = p.submit('move_sequence', my_position, my_move_sequence(my_position))
     # print(result)
