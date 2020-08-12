@@ -182,6 +182,14 @@ Similar to the first problem, now you have to create an  implementation for `my_
 ### Problem Three: Find the sequence of moves
 #### The problem: *A knight stand on a square in the 3x3 chessboard. The squares on the board are number 1 to 9 from the top to the bottom row and from left to right. The number of the square where the knight stands is the position of the knight. Given the position, find the sequence of numbers that representing the squares the knight visit, each once, before return to the original squares.*
 
+So this is how the board looks like:
+
+    1 2 3
+    4 5 6
+    7 8 9
+
+So from 1, you can move to 6 or 8. From 6 you can move to 7, but not back to 1, and so on.
+
 Again, a sample position is given
 
     ########################################
@@ -198,9 +206,14 @@ with an fake implementation
     # The test run will fail.
     #
     def my_move_sequence(position):
+        move_sequence = my_position
         if my_position = '1':
             next_position = choice(['6', '8'])
-        return next_position + '789234' + my_position
+            move_sequence = move_sequence + next_position
+            if next_position = '6':
+                next_position = '7'
+                move_sequence = move_sequence + next_position
+        return move_sequence
 
 *Note: The problem asks to simulate move sequences, not to show done sequences. For example to simulate a move of a knight from square 1, you have two choices: square 6, or square 8. The way your code is written is to make the knight move on a preset sequence. You have to write a code that PLAYS the moves based on the chess rules.*
 
