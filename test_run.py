@@ -40,10 +40,15 @@ def my_fake_coin(coins):
 # The test run will fail.
 #
 def my_move_sequence(position):
-    if my_position = '1':
+    move_sequence = my_position
+    next_position = ''
+    if my_position == '1':
         next_position = choice(['6', '8'])
-    return next_position + '789234' + my_position
-
+        move_sequence = move_sequence + next_position
+        if next_position == '6':
+            next_position = '7'
+            move_sequence = move_sequence + next_position
+    return move_sequence
 
 if __name__ == '__main__':
     # Setup your credentials
