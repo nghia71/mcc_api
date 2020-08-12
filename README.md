@@ -207,10 +207,10 @@ with an fake implementation
     #
     def my_move_sequence(position):
         move_sequence = my_position
-        if my_position = '1':
+        if my_position == '1':
             next_position = choice(['6', '8'])
             move_sequence = move_sequence + next_position
-            if next_position = '6':
+            if next_position == '6':
                 next_position = '7'
                 move_sequence = move_sequence + next_position
         return move_sequence
