@@ -17,6 +17,7 @@ class Pegasus:
 
     def login(self, test):
         url = '%s/login/%s' % (self.conf['url'], self.conf['uuid'])
+        # url = '%s/login/%s' % ('http://127.0.0.1:8080', self.conf['uuid'])
         r = self.session.get(url)
         if not r.text.startswith('OK'):
             raise Exception(r.text)
@@ -26,6 +27,15 @@ class Pegasus:
     def submit(self, problem_id, input, output):
         url = '%s/submit/%s/%s/%s/%s' % (
             self.conf['url'], self.conf['uuid'], problem_id, input, output
+            # 'http://127.0.0.1:8080', self.conf['uuid'], problem_id, input, output
+        )
+        r = self.session.get(url)
+        return r.text
+
+    def attempt(self, problem_id):
+        url = '%s/attempt/%s/%s' % (
+            self.conf['url'], self.conf['uuid'], problem_id
+            # 'http://127.0.0.1:8080', self.conf['uuid'], problem_id
         )
         r = self.session.get(url)
         return r.text
