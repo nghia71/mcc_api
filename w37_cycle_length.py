@@ -16,7 +16,6 @@ if __name__ == '__main__':
     ########################################
     # Receive the two numbers via Pegasus.
     i_and_j = p.attempt('cycle_length')
-    print(i_and_j)
 
     ########################################
     # Figure out the maximum cycle length and submit to Astria
